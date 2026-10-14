@@ -1,0 +1,175 @@
+:root {
+  color-scheme: light;
+  --ink: #17324d;
+  --blue: #2563eb;
+  --pale: #eef5ff;
+}
+
+body {
+  color: var(--ink);
+  background: #f6f8fc;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.index-page main {
+  max-width: 960px;
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.practice-link {
+  display: grid;
+  min-height: 160px;
+  grid-template-columns: 48px 1fr;
+  align-content: center;
+  column-gap: 16px;
+  padding: 24px;
+  color: inherit;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #e3eaf5;
+  border-radius: 18px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.practice-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgb(23 50 77 / 10%);
+}
+
+.practice-link span {
+  grid-row: span 2;
+  color: var(--blue);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.practice-link strong {
+  font-size: 1.1rem;
+}
+
+.practice-link small {
+  margin-top: 6px;
+  color: #68788c;
+}
+
+.company-hero {
+  background: linear-gradient(120deg, #173e91, #2563eb 58%, #56a8f5);
+}
+
+.hero-copy,
+.section-copy {
+  max-width: 660px;
+}
+
+.service-card,
+.content-card,
+.form-card,
+.feature-card {
+  border: 1px solid #e3eaf5;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgb(23 50 77 / 5%);
+}
+
+.service-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.service-card:hover,
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgb(23 50 77 / 10%);
+}
+
+.service-icon,
+.feature-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--blue);
+  font-weight: 800;
+  background: var(--pale);
+  border-radius: 14px;
+}
+
+.contact-band,
+.feature-section {
+  background: var(--pale);
+}
+
+.contact-band a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.grid-banner {
+  background: linear-gradient(120deg, #eef5ff, #f9fbff);
+}
+
+.content-card {
+  min-height: 330px;
+}
+
+.mini-card,
+.sidebar-card {
+  height: 100%;
+  padding: 22px;
+  background: white;
+  border: 1px solid #e3eaf5;
+  border-radius: 16px;
+}
+
+.form-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 12% 8%, rgb(37 99 235 / 10%), transparent 38%),
+    #f6f8fc;
+}
+
+.form-card {
+  background: white;
+}
+
+.landing-hero {
+  background: linear-gradient(120deg, #eef5ff, #f9fbff);
+}
+
+.landing-image {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgb(23 50 77 / 14%);
+}
+
+.introduction-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+.feature-card {
+  background: white;
+}
+
+.feature-icon {
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 575.98px) {
+  .display-4 {
+    font-size: 2.35rem;
+  }
+
+  .practice-link {
+    min-height: 140px;
+    padding: 20px;
+  }
+}

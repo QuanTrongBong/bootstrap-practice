@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Grid System | Góc học tập</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Góc Học Tập</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gridNav" aria-controls="gridNav" aria-expanded="false" aria-label="Mở menu điều hướng">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="gridNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#content">Bài viết</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chủ đề</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#content">Công nghệ</a></li>
+              <li><a class="dropdown-item" href="#content">Thiết kế</a></li>
+              <li><a class="dropdown-item" href="#sidebar">Tài nguyên</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="grid-banner py-5">
+    <div class="container">
+      <p class="eyebrow">KIẾN THỨC · CẢM HỨNG · KẾT NỐI</p>
+      <h1 class="fw-bold">Không gian chia sẻ tri thức</h1>
+      <p class="text-secondary mb-0">Bố cục linh hoạt với Bootstrap Containers và Grid System.</p>
+    </div>
+  </header>
+
+  <main id="content" class="container py-5">
+    <div class="row g-4">
+      <section class="col-12 col-lg-8">
+        <article class="card content-card p-4 p-lg-5">
+          <span class="badge text-bg-primary align-self-start mb-3">BÀI VIẾT MỚI</span>
+          <h2 class="fw-bold">Thiết kế giao diện responsive hiệu quả</h2>
+          <p class="text-secondary">Một bố cục tốt giúp nội dung dễ đọc trên mọi thiết bị. Bootstrap Grid chia màn hình thành 12 cột và cho phép thay đổi số cột theo breakpoint.</p>
+          <p class="text-secondary">Trong ví dụ này, phần nội dung sử dụng <code>col-12 col-lg-8</code>, còn sidebar sử dụng <code>col-12 col-lg-4</code>. Vì vậy, hai phần xếp cạnh nhau từ màn hình lớn 992px; dưới kích thước đó, sidebar tự động xuống dòng bên dưới nội dung chính.</p>
+          <a href="#sidebar" class="btn btn-outline-primary align-self-start">Đọc thêm</a>
+        </article>
+        <div class="row g-3 mt-1">
+          <div class="col-sm-6"><div class="mini-card"><strong>12 cột linh hoạt</strong><p class="mb-0 text-secondary">Kết hợp các breakpoint để điều chỉnh bố cục.</p></div></div>
+          <div class="col-sm-6"><div class="mini-card"><strong>Mobile-first</strong><p class="mb-0 text-secondary">Bắt đầu từ màn hình nhỏ rồi mở rộng.</p></div></div>
+        </div>
+      </section>
+      <aside id="sidebar" class="col-12 col-lg-4">
+        <div class="sidebar-card p-4 h-100">
+          <h2 class="h4 fw-bold">Thông tin bên lề</h2>
+          <p class="text-secondary">Các chủ đề bạn có thể quan tâm trong tuần này:</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-transparent px-0">Bootstrap 5 và hệ thống lưới</li>
+            <li class="list-group-item bg-transparent px-0">Thiết kế ưu tiên thiết bị di động</li>
+            <li class="list-group-item bg-transparent px-0">Trải nghiệm người dùng</li>
+          </ul>
+          <div class="alert alert-primary mt-4 mb-0" role="note">Mẹo: dùng các lớp <code>col-*</code> để thử thay đổi bố cục.</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="bg-dark text-white text-center py-3"><small>&copy; 2026 Góc Học Tập</small></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

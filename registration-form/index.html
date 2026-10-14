@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký thành viên | Nova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="form-page">
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+        <section class="form-card p-4 p-md-5">
+          <div class="text-center mb-4">
+            <p class="eyebrow">THAM GIA CỘNG ĐỒNG</p>
+            <h1 class="h2 fw-bold">Tạo tài khoản</h1>
+            <p class="text-muted mb-0">Điền thông tin bên dưới để đăng ký thành viên.</p>
+          </div>
+          <form id="registrationForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ và tên</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name" placeholder="Nguyễn Văn An" required>
+              <div class="invalid-feedback">Vui lòng nhập họ và tên.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="ban@example.com" required>
+              <div class="invalid-feedback">Vui lòng nhập địa chỉ email hợp lệ.</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" id="password" name="password" autocomplete="new-password" minlength="8" required>
+                <div class="form-text">Tối thiểu 8 ký tự.</div>
+                <div class="invalid-feedback">Mật khẩu cần có ít nhất 8 ký tự.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required>
+                <div class="invalid-feedback">Vui lòng nhập lại đúng mật khẩu.</div>
+              </div>
+            </div>
+            <fieldset class="mb-3">
+              <legend class="form-label fs-6 mb-2">Giới tính</legend>
+              <div class="d-flex flex-wrap gap-4">
+                <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required><label class="form-check-label" for="genderFemale">Nữ</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="genderMale" value="male"><label class="form-check-label" for="genderMale">Nam</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="genderOther" value="other"><label class="form-check-label" for="genderOther">Khác</label></div>
+              </div>
+              <div class="invalid-feedback">Vui lòng chọn giới tính.</div>
+            </fieldset>
+            <fieldset class="mb-3">
+              <legend class="form-label fs-6 mb-2">Sở thích <span class="text-muted fw-normal">(không bắt buộc)</span></legend>
+              <div class="d-flex flex-wrap gap-4">
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="interests" id="interestDesign" value="design"><label class="form-check-label" for="interestDesign">Thiết kế</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="interests" id="interestTechnology" value="technology"><label class="form-check-label" for="interestTechnology">Công nghệ</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" name="interests" id="interestBusiness" value="business"><label class="form-check-label" for="interestBusiness">Kinh doanh</label></div>
+              </div>
+            </fieldset>
+            <div class="mb-4">
+              <label for="country" class="form-label">Quốc gia</label>
+              <select class="form-select" id="country" name="country" required>
+                <option value="" selected disabled>Chọn quốc gia</option>
+                <option value="vn">Việt Nam</option>
+                <option value="sg">Singapore</option>
+                <option value="jp">Nhật Bản</option>
+                <option value="other">Quốc gia khác</option>
+              </select>
+              <div class="invalid-feedback">Vui lòng chọn quốc gia.</div>
+            </div>
+            <button class="btn btn-primary btn-lg w-100" type="submit">Đăng ký</button>
+            <p id="formMessage" class="text-center text-success fw-semibold mt-3 mb-0" role="status" aria-live="polite"></p>
+            <p class="small text-muted text-center mt-3 mb-0">Đây là form minh họa, thông tin không được gửi lên máy chủ.</p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="form.js"></script>
+</body>
+</html>
