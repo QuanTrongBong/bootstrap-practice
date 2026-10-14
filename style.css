@@ -163,6 +163,253 @@ body {
   font-size: 1.4rem;
 }
 
+.home-carousel .carousel-item img,
+.practice-carousel .carousel-item img,
+.signup-carousel .carousel-item img {
+  height: min(62vw, 560px);
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.home-carousel .carousel-item::after,
+.signup-carousel .carousel-item::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(10 25 45 / 58%), rgb(10 25 45 / 10%));
+  content: "";
+}
+
+.home-carousel .carousel-caption,
+.signup-carousel .carousel-caption {
+  z-index: 1;
+  right: 12%;
+  bottom: 16%;
+  left: 12%;
+  text-align: left;
+}
+
+.home-carousel .carousel-caption > * {
+  max-width: 680px;
+}
+
+.contact-band {
+  background: var(--pale);
+}
+
+.contact-form {
+  max-width: 720px;
+}
+
+.column-card {
+  min-height: 230px;
+  border-radius: 16px;
+}
+
+.column-card-light {
+  color: var(--ink);
+  background: #eef5ff;
+}
+
+.column-card-dark {
+  color: white;
+  background: #385779;
+}
+
+.column-card > i {
+  color: var(--blue);
+}
+
+.column-card-dark > i {
+  color: #b9d8ff;
+}
+
+.spacing-note {
+  border-block: 1px solid #e3eaf5;
+}
+
+.practice-carousel .carousel-item img {
+  height: 420px;
+}
+
+.practice-carousel .carousel-caption {
+  right: 12%;
+  left: 12%;
+  padding: 12px;
+  background: rgb(15 31 52 / 45%);
+  border-radius: 12px;
+}
+
+.signup-carousel .carousel-item img {
+  height: 590px;
+  border-radius: 20px;
+}
+
+.signup-carousel .carousel-inner {
+  box-shadow: 0 20px 48px rgb(23 50 77 / 15%);
+}
+
+.product-hero {
+  overflow: hidden;
+  background: linear-gradient(120deg, #f3f7ff, #e7efff);
+}
+
+.product-heading {
+  max-width: 700px;
+}
+
+.device-stage {
+  position: relative;
+  display: grid;
+  width: min(100%, 480px);
+  min-height: 480px;
+  place-items: center;
+}
+
+.device-orbit {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgb(37 99 235 / 14%);
+  border-radius: 50%;
+}
+
+.orbit-two {
+  width: 440px;
+  height: 440px;
+  border-color: rgb(37 99 235 / 8%);
+}
+
+.device {
+  position: relative;
+  z-index: 1;
+  width: 215px;
+  height: 400px;
+  overflow: hidden;
+  background: linear-gradient(155deg, #1c90aa, #6ac2d4 48%, #176a87);
+  border: 7px solid #132c40;
+  border-radius: 38px;
+  box-shadow: 18px 28px 45px rgb(18 44 64 / 28%);
+  transform: rotate(-9deg);
+}
+
+.device::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: 2;
+  width: 74px;
+  height: 16px;
+  background: #132c40;
+  border-radius: 0 0 12px 12px;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.device-camera {
+  position: absolute;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  background: radial-gradient(circle at 35% 35%, #7ccce2, #132733 44%, #07121b 72%);
+  border: 3px solid #b4d5dc;
+  border-radius: 50%;
+}
+
+.camera-one {
+  top: 23px;
+  left: 22px;
+}
+
+.camera-two {
+  top: 72px;
+  left: 22px;
+}
+
+.camera-three {
+  top: 23px;
+  left: 70px;
+}
+
+.device-flash {
+  position: absolute;
+  top: 82px;
+  left: 83px;
+  width: 10px;
+  height: 10px;
+  background: #f7e9aa;
+  border-radius: 50%;
+}
+
+.device-mark {
+  position: absolute;
+  top: 185px;
+  left: 88px;
+  color: rgb(255 255 255 / 75%);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.device-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255 255 255 / 70%);
+  background: linear-gradient(155deg, #d3e6e8 0%, #89bdc8 45%, #e0c79d 100%);
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.device-screen > i {
+  position: absolute;
+  right: 26px;
+  bottom: 30px;
+  font-size: 1.4rem;
+}
+
+.device:hover .device-screen {
+  opacity: 1;
+}
+
+.product-feature {
+  background: #f6f8fc;
+  border-radius: 18px;
+}
+
+.product-feature > i {
+  color: var(--blue);
+  font-size: 1.8rem;
+}
+
+.product-specs {
+  background: #f3f6fb;
+}
+
+.spec-tile {
+  display: flex;
+  min-height: 110px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+  background: white;
+  border: 1px solid #e3eaf5;
+  border-radius: 16px;
+}
+
+.spec-tile strong {
+  color: var(--blue);
+  font-size: 1.4rem;
+}
+
+.spec-tile span {
+  color: #68788c;
+  font-size: .9rem;
+}
+
 @media (max-width: 575.98px) {
   .display-4 {
     font-size: 2.35rem;
@@ -171,5 +418,46 @@ body {
   .practice-link {
     min-height: 140px;
     padding: 20px;
+  }
+
+  .home-carousel .carousel-item img,
+  .practice-carousel .carousel-item img {
+    height: 360px;
+  }
+
+  .signup-carousel .carousel-item img {
+    height: 360px;
+  }
+
+  .home-carousel .carousel-caption,
+  .signup-carousel .carousel-caption {
+    right: 14%;
+    bottom: 12%;
+    left: 14%;
+  }
+
+  .home-carousel .carousel-caption h1,
+  .home-carousel .carousel-caption h2,
+  .signup-carousel .carousel-caption h1,
+  .signup-carousel .carousel-caption h2 {
+    font-size: 1.7rem;
+  }
+
+  .device-stage {
+    min-height: 400px;
+  }
+
+  .device {
+    transform: scale(.86) rotate(-9deg);
+  }
+
+  .device-orbit {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orbit-two {
+    width: 350px;
+    height: 350px;
   }
 }

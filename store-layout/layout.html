@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Shopping Mall | CodeGym</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="poly.css">
+</head>
+<body>
+  <div class="container store-container">
+    <header class="store-header row">
+      <img class="store-header-image" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="">
+      <div class="shopping-mall">
+        <h1>Online shopping mall</h1>
+        <h5>The center point of the professional programming</h5>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-inverse" aria-label="Điều hướng chính">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#storeNav" aria-expanded="false" aria-controls="storeNav">
+            <span class="sr-only">Mở menu</span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand visible-xs" href="#">Online Mall</a>
+        </div>
+        <div class="collapse navbar-collapse" id="storeNav">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Trang chủ</a></li>
+            <li><a href="#products"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Giới thiệu</a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Liên hệ</a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Góp ý</a></li>
+            <li><a href="#faq"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Hỏi đáp</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Tài khoản <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#account">Đăng nhập</a></li><li><a href="#account">Đăng ký</a></li><li role="separator" class="divider"></li><li><a href="#account">Quên mật khẩu?</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="row">
+      <article id="products" class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-4 col-xs-6 poly-prod"><div class="panel panel-default"><div class="panel-heading"><h2 class="panel-title">Điện thoại thông minh</h2></div><div class="panel-body"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Điện thoại thông minh"></div><div class="panel-footer">$ 399.00</div></div></div>
+          <div class="col-sm-4 col-xs-6 poly-prod"><div class="panel panel-default"><div class="panel-heading"><h2 class="panel-title">Máy tính xách tay</h2></div><div class="panel-body"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Máy tính xách tay"></div><div class="panel-footer">$ 899.00</div></div></div>
+          <div class="col-sm-4 col-xs-6 poly-prod"><div class="panel panel-default"><div class="panel-heading"><h2 class="panel-title">Tai nghe không dây</h2></div><div class="panel-body"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Tai nghe không dây"></div><div class="panel-footer">$ 129.50</div></div></div>
+          <div class="col-sm-4 col-xs-6 poly-prod"><div class="panel panel-default"><div class="panel-heading"><h2 class="panel-title">Máy ảnh kỹ thuật số</h2></div><div class="panel-body"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Máy ảnh kỹ thuật số"></div><div class="panel-footer">$ 520.00</div></div></div>
+          <div class="col-sm-4 col-xs-6 poly-prod"><div class="panel panel-default"><div class="panel-heading"><h2 class="panel-title">Đồng hồ thông minh</h2></div><div class="panel-body"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Đồng hồ thông minh"></div><div class="panel-footer">$ 185.75</div></div></div>
+          <div class="col-sm-4 col-xs-6 poly-prod"><div class="panel panel-default"><div class="panel-heading"><h2 class="panel-title">Loa Bluetooth</h2></div><div class="panel-body"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Loa Bluetooth"></div><div class="panel-footer">$ 79.99</div></div></div>
+        </div>
+      </article>
+
+      <aside class="col-sm-3">
+        <div class="poly-cart panel panel-default">
+          <div class="panel-heading"><strong><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Giỏ hàng</strong></div>
+          <div class="panel-body">
+            <img class="col-xs-5 cart-icon" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/cart4.svg" alt="">
+            <ul class="col-xs-7"><li>3 sản phẩm</li><li>$ 56.80</li><li><a href="#products">Xem giỏ hàng</a></li></ul>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body"><form role="search"><label class="sr-only" for="storeSearch">Tìm sản phẩm</label><input id="storeSearch" placeholder="Từ khóa" class="form-control"></form></div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> <strong>Chủng loại</strong></div>
+          <div class="list-group">
+            <a href="#products" class="list-group-item">Điện thoại di động <span class="badge">12</span></a>
+            <a href="#products" class="list-group-item">Máy tính xách tay <span class="badge">8</span></a>
+            <a href="#products" class="list-group-item">Máy tính để bàn <span class="badge">5</span></a>
+            <a href="#products" class="list-group-item">Quạt máy <span class="badge">9</span></a>
+            <a href="#products" class="list-group-item">Tivi <span class="badge">7</span></a>
+            <a href="#products" class="list-group-item">Tủ lạnh <span class="badge">4</span></a>
+          </div>
+        </div>
+        <div id="faq" class="panel panel-info"><div class="panel-heading"><strong>Hỗ trợ khách hàng</strong></div><div class="panel-body">Gọi chúng tôi: <a href="tel:+84900123456">0900 123 456</a></div></div>
+      </aside>
+    </main>
+
+    <footer id="contact" class="panel panel-default"><div class="panel-heading text-center"><p>CodeGym &copy; 2026 · <a href="mailto:hello@example.com">Liên hệ cửa hàng</a></p></div></footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
